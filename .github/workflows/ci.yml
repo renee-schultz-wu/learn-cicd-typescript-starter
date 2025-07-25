@@ -19,6 +19,6 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: 
+        run: |
           npm ci
           npm run test -- --coverage
