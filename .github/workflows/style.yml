@@ -1,4 +1,4 @@
-name: style
+name: Style
 
 on:
   pull_request:
@@ -22,4 +22,7 @@ jobs:
         run: npm ci
 
       - name: Check formatting
-        run: npm run format:check
+        run: |
+            cat package.json
+            which prettier
+            npm run format:check
