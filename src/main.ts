@@ -20,7 +20,6 @@ function unused() {
   // and is called nowhere
 }
 
-
 const app = express();
 app.use(express.json());
 
